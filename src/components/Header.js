@@ -33,6 +33,7 @@ const Header = () => {
               }`}
               className="primary-btn"
               target="_blank"
+              rel="noopener noreferrer"
             >
               CONNECT WITH ME
             </a>

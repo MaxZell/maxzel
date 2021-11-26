@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Fade from "react-reveal/Fade"
 import { graphql, StaticQuery } from "gatsby"
 import ThumbGrid from "./thumbnails"
-import LightBox from "./lightbox"
+import LightBox from "./lightbox_video"
 import { Grid } from "@material-ui/core"
 
 const Animation = () => {
@@ -26,18 +26,16 @@ const Animation = () => {
     <StaticQuery
       query={graphql`
       query animationImgQuery {
-          source: allFile(filter: { absolutePath: { regex: "/animation/" } }) {
-          edges {
-              node {
-              childImageSharp {
-                  fluid(maxHeight: 500) {
-                  ...GatsbyImageSharpFluid
-                  presentationWidth
-                  }
-              }
-              }
+        markdownRemark(frontmatter: { path: { regex: "/animation/" } }) {
+          html
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+            videoSrcURL
+            videoTitle
           }
-          }
+        }
       }
       `}
       render={data => {
