@@ -9,13 +9,13 @@ const style = theme => ({
     background: "transparent",
     border: "none",
     padding: 0,
-    margin: 0,
-    height: 200,
-    width: 200
+    margin: 10,
+    height: 40+"vh",
+    width: 40+"vh",
   },
   thumbnail: {
-    width: 200,
-    height: 200
+    width: 40+"vh",
+    height: 40+"vh",
   },
 })
 

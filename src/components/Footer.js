@@ -26,6 +26,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
+          <p>Copyrights © website & medias 2021 Maxim Zelensky</p>
         </div>
       </div>
     </div>

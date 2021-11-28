@@ -21,11 +21,11 @@ export default {
 
   // About Secton --------------
   aboutParaOne:
-    "Мня зовут Максим Михайлович Зеленский. Родился в Санкт-Петербурге - культурном центре России. Посещал в свободное время дизайн центр и художественную школу в Аничковом дворце. А также ходил в искусствоведческий клуб 'Фенестра'. Много путешествовал с клубом и семьей по всей Европе.",
+    "My name is Maxim Mikhailovich Zelensky. I was born in St. Petersburg, the cultural center of Russia. In my spare time I attended the design center and the art school at the Anichkov Palace. And also went to the art club 'Fenestra'. Traveled extensively with the club and family all over Europe.",
   aboutParaTwo:
-    "С 2008 посещал 207 школу с углубленным изучением английского языка. В 2015 году мы с семьей переехали в Швейцарию и перевелся в Sekundarschule Wallisellen sekundar A. Параллельно закончил немецкую гимназию номер 56 СПБ дистанционно. С 2017-2022 прохожу практику на программиста.",
+    "Since 2008 I attended school 207 with profound study of English. In 2015 my family and I moved to Switzerland and I transferred to Sekundarschule Wallisellen sekundar A. In parallel I graduated from German Gymnasium number 75 St.PB by distance. From 2017-2022 I am doing an internship as a programmer.",
   aboutParaThree:
-    "Я обожаю рисовать! Рисую с самого детства и участвую в различных выставках, но в основном в традиционном стиле. В 2020 купил себе графический экран и начал изучать анимацию в Krita и Toon Boom Harmony.",
+    "I love to draw! I've been drawing since I was a kid and participating in various exhibitions, but mostly in a traditional style. In 2020 I bought myself a graphics screen and started learning animation in Krita and Toon Boom Harmony.",
   aboutImage: meImage,
 
   //   End About Section ---------------------

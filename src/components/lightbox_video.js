@@ -1,35 +1,28 @@
 import React from "react"
 
-import LightboxReact from "lightbox-react"
-import "lightbox-react/style.css"
-
-import NonStretchedImage from "./nonStretchedVideo"
-
-const Lightbox = ({
-  images,
-  selectedImage,
-  handleClose,
-  handlePrevRequest,
-  handleNextRequest,
-}) => {
-  const array = []
-
-  images.forEach(image =>
-    array.push(<NonStretchedImage fluid={image.node.childImageSharp.fluid} />)
-  )
-
-  return (
-    <LightboxReact
-      enableZoom={false}
-      clickOutsideToClose={true}
-      mainSrc={array[selectedImage]}
-      nextSrc={array[(selectedImage + 1) % array.length]}
-      prevSrc={array[(selectedImage + array.length - 1) % images.length]}
-      onCloseRequest={handleClose}
-      onMovePrevRequest={handlePrevRequest(selectedImage, array.length)}
-      onMoveNextRequest={handleNextRequest(selectedImage, array.length)}
-    />
-  )
+const Animation = {
+  display: "inline-block",
+  background: "transparent",
+  border: "none",
+  padding: 0,
+  margin: 10,
+  width: "auto",
+  height: 40+"vh",
 }
 
+const Lightbox = (props) => {
+  console.log(props.images);
+  return (
+    <div className="Animations">
+      {props.images.map(video => (
+        <video style={Animation} controls mute className="Animation">
+          <source src={video.node.publicURL} />
+          <track kind="captions" src={video.node.publicURL} srclang="en"></track>
+        </video>
+      ))}
+    </div>
+  );
+};
+
+// export default withStyles(style)(Lightbox)
 export default Lightbox
