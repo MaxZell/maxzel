@@ -27,7 +27,7 @@
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.1"
   },
-  "homepage": "http://MaxZell.github.io/maxzel",
+  "homepage": "http://maxzell.github.io/",
   "devDependencies": {
     "prettier": "2.1.2"
   },
@@ -41,6 +41,6 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d public"
   }
 }
