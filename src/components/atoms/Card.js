@@ -1,6 +1,24 @@
 import React from "react"
 
+var listOfPreviews =[];
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+function componentWillMount() {
+  listOfPreviews = importAll(require.context('../../images/gallery/video-thumbnails', false, /\.(png|jpe?g|svg|jpg|)$/));
+}
+
+componentWillMount()
+console.log(listOfPreviews);
+
 const Card = ({ heading, paragraph, imgUrl, projectLink }) => {
+  if(imgUrl.split('.').pop() === "mp4"){
+    // console.log("mp4!1", imgUrl)
+    // console.log(parseInt(imgUrl.split('/').pop().split('-')[1], 10))
+    // console.log("mp4!3", listOfPreviews[parseInt(imgUrl.split('/').pop().split('-')[1], 10)-1])
+    imgUrl = listOfPreviews[parseInt(imgUrl.split('/').pop().split('-')[1], 10)-1]
+  }
   return (
     <div
       className="card"
