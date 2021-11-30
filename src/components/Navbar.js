@@ -8,16 +8,14 @@ const Navbar = () => {
           <div
             role="button"
             onClick={() => scrollTo("#home")}
-            onKeyDown={() => scrollTo("#home")}
             className="name"
             tabIndex={0}
+            onKeyDown={() => scrollTo("#home")}
           >
-            MaxZel portfolio
+            Portfolio.
           </div>
           <div className="links-wrapper">
-            <button onClick={() => scrollTo("#traditional")}>Traditional</button>
-            <button onClick={() => scrollTo("#digital")}>Digital</button>
-            <button onClick={() => scrollTo("#animation")}>Animation</button>
+            <button onClick={() => scrollTo("#work")}>Work</button>
             <button onClick={() => scrollTo("#about")}>About</button>
             <button onClick={() => scrollTo("#contact")}>Contact</button>
           </div>
